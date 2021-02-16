@@ -1,1 +1,2 @@
-# Todo List built with Dotnet Core 5 and Angular 11.
+# Todo List 
+Built with Dotnet Core 5 and Angular 11.
