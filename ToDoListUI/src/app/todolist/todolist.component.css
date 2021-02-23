@@ -26,3 +26,14 @@
 input:focus {
     outline:none;
 }
+
+mat-list-option[aria-selected="true"] {
+    text-decoration: line-through;
+}
+
+.todo-items {
+    font-size: 18px;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 250px;
+}

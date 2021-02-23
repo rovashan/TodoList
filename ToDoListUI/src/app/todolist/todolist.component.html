@@ -1,7 +1,18 @@
 <div class="container">
     <!-- <p class="heading">Todo</p> -->
     <img src="/assets/images/superman.png" width="70px">
-    
-    <input class="todoinput" type="text" placeholder="Add task" 
-            [(ngModel)]="newTodo" (keyup.enter)="addTodo()">
+
+    <input class="todoinput" type="text" placeholder="Add task" [(ngModel)]="newTodo" (keyup.enter)="addTodo()">
+
+    <!-- <mat-list role="list" *ngFor="let todo of todos">
+        <mat-list-item role="listitem">{{ todo.name }}</mat-list-item>
+    </mat-list> -->
+
+    <mat-selection-list class="todo-items">
+        <mat-list-option *ngFor="let todo of todos">
+            {{ todo.name }}
+        </mat-list-option>
+    </mat-selection-list>
+
+
 </div>

@@ -18,7 +18,8 @@ export class TodolistComponent implements OnInit {
   ngOnInit(): void {
     this.todoService.getAllTodos().subscribe((data: Todo[]) => {
       console.log(data);
-    })
+      this.todos = data;
+    });
   }
   
   addTodo() {
@@ -29,7 +30,7 @@ export class TodolistComponent implements OnInit {
     this.todos.push({
       name: this.newTodo,
       isComplete: false
-    })
+    });
   }
 
 }
